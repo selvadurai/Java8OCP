@@ -10,5 +10,11 @@ public class PersonModel {
 	  this.name=name;
 	  this.age=age;
   }
-
+  
+  @Override
+  public int hashCode() {
+    return name.hashCode()+age;
+  }
+	  
+	  
 }
